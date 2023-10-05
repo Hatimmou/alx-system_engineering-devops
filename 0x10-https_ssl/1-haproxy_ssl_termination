@@ -56,6 +56,3 @@ backend www-backend
 	balance roundrobin
 	server 387248-web-01 18.209.225.197:80 check
 	server 387248-web-02 52.91.150.247:80 check
-
-backend letsencrypt-backend
-	server letsencrypt 127.0.0.1:54321
