@@ -23,9 +23,8 @@ if __name__ == "__main__":
 
     with open("{}.csv".format(user_id), "w", newline="") as csvfile:
         csv_writer = csv.writer(csvfile)
-        csv_writer.writerow(["user_id", "username", "completed", "title"])
+        csv_writer.writerow(["USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"])
 
         for todo in todos:
-            csv_writer.writerow([user_id, username, todo.get("completed"), todo.get("title")]
-)
+            csv_writer.writerow([user_id, username, todo.get("completed"), todo.get("title")])
 
